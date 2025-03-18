@@ -3,7 +3,7 @@ package gopdf_test
 import (
 	"testing"
 
-	"github.com/signintech/gopdf"
+	"github.com/hennedo/gopdf"
 )
 
 func TestTable(t *testing.T) {

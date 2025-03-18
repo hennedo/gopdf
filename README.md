@@ -16,7 +16,7 @@ A minimum version of Go 1.13 is required.
 ## Installation
 
 ```
-go get -u github.com/signintech/gopdf
+go get -u github.com/hennedo/gopdf
 ```
 
 ### Print text
@@ -26,7 +26,7 @@ go get -u github.com/signintech/gopdf
 package main
 import (
 	"log"
-	"github.com/signintech/gopdf"
+	"github.com/hennedo/gopdf"
 )
 
 func main() {
@@ -73,7 +73,7 @@ pdf.Cell(nil, "Hello")
 package main
 import (
 	"log"
-	"github.com/signintech/gopdf"
+	"github.com/hennedo/gopdf"
 )
 
 func main() {
@@ -108,7 +108,7 @@ package main
 
 import (
 	"log"
-	"github.com/signintech/gopdf"
+	"github.com/hennedo/gopdf"
 )
 
 func main()  {
@@ -153,7 +153,7 @@ package main
 
 import (
     "log"
-    "github.com/signintech/gopdf"
+    "github.com/hennedo/gopdf"
 )
 
 func main() {
@@ -274,7 +274,7 @@ package main
 import (
 	"log"
 
-	"github.com/signintech/gopdf"
+	"github.com/hennedo/gopdf"
 )
 
 
@@ -306,7 +306,7 @@ Import existing PDF power by package [gofpdi](https://github.com/phpdave11/gofpd
 package main
 
 import (
-        "github.com/signintech/gopdf"
+        "github.com/hennedo/gopdf"
         "io"
         "net/http"
         "os"
@@ -393,7 +393,7 @@ package main
 import (
 	"log"
 
-	"github.com/signintech/gopdf"
+	"github.com/hennedo/gopdf"
 )
 
 func main() {
@@ -475,13 +475,14 @@ func main(){
 ```
 
 ### Table Create
+
 ```go
 package main
 
 import (
     "fmt"
 
-    "github.com/signintech/gopdf"
+    "github.com/hennedo/gopdf"
 )
 
 func main() {
@@ -495,10 +496,10 @@ func main() {
 
 	 pdf.AddTTFFont("font1", "./font1.ttf")
 	pdf.SetFont("font1", "", 11)
-	
+
 	pdf.AddTTFFont("font2", "./font2.ttf")
 	pdf.SetFont("font2", "", 11)
-	
+
 	// Set the starting Y position for the table
 	tableStartY := 10.0
 	// Set the left margin for the table
@@ -574,6 +575,5 @@ func main() {
 
 result:
 ![table](./examples/table/table_example.jpg)
-
 
 visit https://github.com/oneplus1000/gopdfsample for more samples.
